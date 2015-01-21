@@ -18,7 +18,7 @@ public class Conteneur implements Serializable {
     private String expediteur;
     private int poids;
     private String destination;
-    //private Tarif calculeTarif;
+    private Tarif monTarif;
 
     public Conteneur(String expediteur, int poids, String destination) {
         this.expediteur = expediteur;
@@ -34,14 +34,14 @@ public class Conteneur implements Serializable {
         return poids;
     }
     
-    /*public double calculerTarif(){
-        return calculeTarif.calculerTarif(this);
+    public double calculerTarif(){
+        return monTarif.calculerTarif(this);
     }
 
     public void setCalculeTarif(Tarif tarif) {
-        this.calculeTarif = tarif;
+        this.monTarif = tarif;
     }
-    */
+    
     public String getExpediteur() {
         return expediteur;
     }

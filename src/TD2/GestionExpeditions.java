@@ -18,12 +18,12 @@ public class GestionExpeditions {
         Lecteur lecteur = new Lecteur();
         
         for (Conteneur conteneur : lecteur.lire("../Conteneurs.ser")){
-            System.out.println(lecteur);
+            System.out.println(conteneur);
         }
         
                 
         for (Conteneur conteneur : lecteur.lire("../Conteneurs2.ser")){
-            System.out.println(lecteur);
+            System.out.println(conteneur);
         }
     }
     
